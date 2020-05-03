@@ -1,0 +1,162 @@
+<!--
+@freecodecamp.org: https://www.freecodecamp.org/aice0927
+@codepen.io:https://codepen.io/aice09/pen/wNvygX
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tribute Page</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>	
+
+	<!-- 
+
+	Hello Camper!
+
+	For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+	- The freeCodeCamp Team 
+
+	-->
+
+	<div id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="tribute-info">
+					<h1 id="title">Individual Appointment - Personal Information</h1>
+					<div  >
+						<p id="description">This appointment and scheduling system allocates slots on a first come, first served basis. Limited slots are available per site and there is no guarantee that a slot will always be available for a user's first choice for an appointment schedule.</p>
+
+						<p>Users accept the responsibility for supplying, checking, and verifying the accuracy and correctness of the information they provide on this system in connection with their application, and consent to the collection and use of their personal information and biometric data for Government to conduct checks and validation against existing records and previous passport applications.</p>
+
+						<p>Deliberate, multiple attempts to circumvent the system to secure a schedule for the purpose of blocking several dates in advance is detrimental to public service. Users who are found to have abused the system will be blocked from securing an appointment.</p>
+					</div>
+					<form action="" method="POST" role="form" id="survey-form">
+					
+						<div class="form-group">
+							<label for="name" id="name-label">Name *</label>
+							<input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required">
+						</div>
+						<div class="form-group">
+							<label for="email" id="email-label">Email</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="email@domain.com" required="required">
+						</div>
+						<div class="form-group">
+							<label for="mobile-number">Mobile Number *</label>
+							<div class="input-group">
+							    <div class="input-group-addon">+</div>
+							   	<input type="text" class="form-control" id="mobile-number" name="mobile-number" placeholder="639XXXXXXXXX" required="required">
+							</div>
+						</div>
+						<div class="form-group" >
+							<label for="age" id="number-label">Age *</label>
+							<input type="number" class="form-control" id="number" name="age" min="1" max="250" placeholder="Age" required="required">
+						</div>
+						<div class="form-group">
+							<label for="civil-status">Civil Status *</label>
+							<select name="civil-status" id="dropdown" class="form-control" required="required">
+								<option value="0">Select Civil Status</option>
+								<option value="Single">Single</option>
+								<option value="Married">Married</option>
+								<option value="Widowed">Widowed</option>
+								<option value="Separated">Separated</option>
+								<option value="Annulled">Annulled</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="civil-status">Gender *</label>
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+							    Male
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							    Female
+							  </label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="civil-status">Field of Work *</label>
+							<div class="radio">
+							  <label>
+							    <input type="checkbox" name="optionsCheckbox" id="optionsCheckbox1" value="option1">
+							    Front-End Developer
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="checkbox" name="optionsCheckbox" id="optionsCheckbox2" value="option2">
+							    Back-End Developer
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="checkbox" name="optionsCheckbox" id="optionsCheckbox3" value="option3">
+							    Database Administrator
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="checkbox" name="optionsCheckbox" id="optionsCheckbox3" value="option3">
+							    Network Administrator
+							  </label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="civil-status">Civil Status *</label>
+							<textarea name="" id="input" class="form-control" rows="3" required="required"></textarea>
+						</div>
+					
+						
+					
+						<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+					</form>
+				</div>
+				 
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<br>
+			    	<br>
+					<div id="disqus_thread"></div>
+					<script>
+
+					/**
+					*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+					*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+					/*
+					var disqus_config = function () {
+					this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+					this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+					};
+					*/
+					(function() { // DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+					s.src = 'https://i-am-carl.disqus.com/embed.js';
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+					})();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					                            
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+					<hr>
+					<p>Copyright &copy; 2019. Crafted with &#10084; and lots of <span class="fa fa-coffee"></span>.<br>
+						Challege at  <b><a href="javascript:void(0);" onclick="window.location='https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page/'">freeCodeCamp</a><b>. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="custom.js"></script>
+</body>
+</html>
