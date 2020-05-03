@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+.article-background {
+    background: url("https://images.pexels.com/photos/1464822/pexels-photo-1464822.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260")no-repeat center;
+  background-size: cover;
+  height: 50rem;
+  position: relative;
+  margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 39.9375em) {
+  .article-background {
+    height: 20.83333rem;
+  margin-bottom: 20px;
+  }
+  
+}
+
+.article-content {
+    display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 3.125rem;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width: 39.9375em) {
+    .article-content {
+    bottom: 1.25rem;
+  }
+}
+.article-content .center-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .large-article-header-content .center-container {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+}
+
+    .article-published {
+color: #fefefe;
+    }
+  .article-caption {
+color: #fefefe;
+    }
+    .article-content .article-title h1 {
+    	font-family: 'Special Elite', cursive;
+  line-height: 3.125rem;
+  font-size: 60px;
+  color: #fefefe;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .article-content .article-title h1 {
+    line-height: 1.875rem;
+  }
+}
+
+.article-content .article-details {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article-content .article-details a {
+  color: #fefefe;
+}
+
+   
+  .article-content .article-author {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.article-content .article-author img {
+  border-radius: 3.125rem;
+  border:2px solid white;
+}
+
+.article-content .article-author a {
+  margin-left: 1rem;
+}
+.article-descriptions {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.article-archive {
+    list-style: none;
+    list-style-position: inside; padding-left: 0;
+}
+.article-archive .article-archive-list {
+    margin:3px 0 3px 0;
+}
+.article-archive a {
+    text-decoration: none;
+}
+.article-disqus-container {
+    margin-top: 15px;
+}
