@@ -1,0 +1,31 @@
+//Backgrounds
+$bg-one: #f4f4f4;
+
+$primary-color: blue;
+$secondary-color: teal;
+$text-color1: cyan;
+
+//Color Schemes: Extra Snug
+//Reference: https://hookagency.com/website-color-schemes/
+$cs-french-laundry-blue: #3a4660;
+$cs-Comfortably-tan: #c9af98;
+$cs-peachy-kreme: #ed8a63;
+$cs-brown-bonnet: #845007;
+//End Color Schemes
+
+//General Settings
+body{
+    background-color: $bg-one;
+    //color: $text-color1;
+    //text-align: center;
+}
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+//Section0
+#section0 {
+    margin-top: 3rem;
+}
+//Subscription

@@ -1,0 +1,33 @@
+
+
+.section {
+    height: 50rem;
+    width: auto;
+    border: 1px solid black;
+}
+
+#section0{
+    padding-top: 100px;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) {
+    .section {
+        height: 10rem;
+        width: auto;
+        border: 1px solid black;
+    }
+    
+    #section0{
+        padding-top: 50px;
+    }
+}
+
+/* Medium (md) */
+@media (min-width: 768px) { /* ... */ }
+
+/* Large (lg) */
+@media (min-width: 1024px) { /* ... */ }
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) { /* ... */ }
